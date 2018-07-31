@@ -1,0 +1,32 @@
+{
+  "name": "d2/generico",
+  "type": "wordpress-theme",
+  "description": "Developer-friendly Genesis starter theme with a config-driven approach.",
+  "homepage": "https://github.com/d2themes/generico",
+  "authors": [
+    {
+      "name": "Craig Simpson",
+      "email": "craig@craigsimpson.scot",
+      "homepage": "https://craigsimpson.scot",
+      "role": "Developer"
+    }
+  ],
+  "config": {
+    "sort-order": true
+  },
+  "require": {
+    "php": ">=5.4",
+    "d2/core-genesis-customizer-panels": "^0.2.0",
+    "d2/core-genesis-layouts": "^0.1.0",
+    "d2/core-genesis-meta-boxes": "^0.1.0",
+    "d2/core-page-templates": "^0.1.0",
+    "d2/core-textdomain": "^0.1.0",
+    "d2/core-theme-support": "^0.1.0",
+    "d2/core-widget-areas": "^0.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Generico\\Theme\\": "src/"
+    }
+  }
+}

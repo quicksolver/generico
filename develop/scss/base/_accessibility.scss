@@ -1,0 +1,43 @@
+/* ## Accessibility
+--------------------------------------------- */
+
+.menu .menu-item:focus {
+	position: static;
+}
+
+.menu .menu-item > a:focus + ul.sub-menu,
+.menu .menu-item.sf-hover > ul.sub-menu {
+	left: auto;
+	opacity: 1;
+}
+
+.screen-reader-text,
+.screen-reader-text span,
+.screen-reader-shortcut {
+	@include hide-visually;
+
+	&:active,
+	&:focus {
+		@include hide-visually("unhide");
+	}
+}
+
+.more-link {
+	position: relative;
+}
+
+.genesis-skip-link {
+	margin: 0;
+
+	li {
+		height: 0;
+		width: 0;
+		list-style: none;
+	}
+}
+
+/* Display outline on focus */
+:focus {
+	color: #333;
+	outline: #ccc solid 1px;
+}

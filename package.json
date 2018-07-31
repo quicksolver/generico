@@ -1,0 +1,22 @@
+{
+  "name": "generico",
+  "version": "0.1.0",
+  "description": "Developer-friendly Genesis starter theme with a config-driven approach.",
+  "homepage": "https://github.com/d2themes/generico",
+  "keywords": [
+    "Generico",
+    "Genesis",
+    "WordPress",
+    "child theme"
+  ],
+  "license": "MIT",
+  "author": "Craig Simpson <craig@craigsimpson.scot>",
+  "repository": "https://github.com/d2themes/generico.git",
+  "devDependencies": {
+    "bourbon": "^5.0.1",
+    "bourbon-neat": "^2.1.0",
+    "gulp": "^3.9.1",
+    "gulp-wp-toolkit": "^2.3.2"
+  },
+  "private": true
+}

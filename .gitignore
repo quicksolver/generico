@@ -1,0 +1,27 @@
+# Ignore folders with output which is built.
+assets
+languages
+
+# Ignore Composer packages.
+vendor
+
+# Allow scss vendor folder.
+!develop/scss/vendor/
+
+# Ignore node_modules.
+node_modules/
+
+# Ignore the CSS and map files.
+*.css
+*.css.map
+
+# Ignore screenshot, but not source.
+screenshot.png
+!develop/images/screenshot.png
+
+# Ignore local PHPCS config file.
+phpcs.xml
+
+# Ignore .lock & *-lock.json files.
+*.lock
+*-lock.json

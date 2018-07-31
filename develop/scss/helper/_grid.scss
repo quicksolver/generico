@@ -1,0 +1,26 @@
+$neat-grid: (
+	gutter: $spacer--s,
+);
+
+$screen--xs: (
+	media: 360px,
+);
+
+$screen--s: (
+	media: 480px,
+);
+
+$screen--m: (
+	gutter: $spacer--m,
+	media: 768px,
+);
+
+$screen--l: (
+	gutter: $spacer--m,
+	media: 1024px,
+);
+
+$screen--xl: (
+	gutter: $spacer--m,
+	media: 1140px,
+);

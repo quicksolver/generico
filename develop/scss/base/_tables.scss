@@ -1,0 +1,27 @@
+/* ## Tables
+--------------------------------------------- */
+
+table {
+	border-collapse: collapse;
+	margin: $spacer--s 0;
+	table-layout: fixed;
+	width: 100%;
+}
+
+th {
+	border-bottom: $color-default-black 2px solid;
+	font-weight: 700;
+	padding: $spacer--s 0;
+	text-align: left;
+}
+
+td {
+	border-bottom: $color-default-black 1px solid;
+	padding: $spacer--s 0;
+}
+
+tr,
+td,
+th {
+	vertical-align: middle;
+}

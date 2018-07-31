@@ -1,0 +1,17 @@
+/* ## Responsive Menu
+--------------------------------------------- */
+
+.genesis-responsive-menu {
+	display: none;
+
+	@include grid-media($screen--m) {
+		display: block;
+	}
+}
+
+.menu-toggle,
+.sub-menu-toggle {
+	@include grid-media($screen--m) {
+		display: none;
+	}
+}

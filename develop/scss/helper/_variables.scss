@@ -1,0 +1,53 @@
+//--------------------------------------------------------------
+// Typography
+//--------------------------------------------------------------
+$base-font-family: $font-stack-system;
+$base-font-size: 16px;
+$base-font-weight: 300;
+$base-font-weight--bold: 700;
+$base-line-height: 1.5;
+$base-border-radius: 4px;
+$base-border-style: 1px solid;
+$base-container-width: 960px;
+$base-default-percentage-padding: 5%;
+
+//--------------------------------------------------------------
+// Headings
+//--------------------------------------------------------------
+$heading-font-family: $base-font-family;
+$heading-line-height: 1.2;
+
+// Sizes.
+$heading-h1-size: floor(modular-scale(5, $base-font-size, $heading-line-height));
+$heading-h2-size: floor(modular-scale(4, $base-font-size, $heading-line-height));
+$heading-h3-size: floor(modular-scale(3, $base-font-size, $heading-line-height));
+$heading-h4-size: floor(modular-scale(2, $base-font-size, $heading-line-height));
+$heading-h5-size: floor(modular-scale(1, $base-font-size, $heading-line-height));
+$heading-h6-size: floor(modular-scale(0, $base-font-size, $heading-line-height));
+
+//--------------------------------------------------------------
+// Spacing
+//--------------------------------------------------------------
+$spacer: $base-font-size * $base-line-height;
+
+$spacer--xxl: floor($spacer * 6);
+$spacer--xl:  floor($spacer * 4);
+$spacer--l:   floor($spacer * 2);
+$spacer--m:   $spacer;
+$spacer--s:   floor($spacer / 2);
+$spacer--xs:  floor($spacer / 4);
+$spacer--xxs: floor($spacer / 6);
+
+//--------------------------------------------------------------
+// Z-Index Scale
+//--------------------------------------------------------------
+$z-index-1:   100;
+$z-index-2:   200;
+$z-index-3:   300;
+$z-index-4:   400;
+$z-index-5:   500;
+$z-index-6:   600;
+$z-index-7:   700;
+$z-index-8:   800;
+$z-index-9:   900;
+$z-index-10: 1000;

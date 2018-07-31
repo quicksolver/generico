@@ -1,0 +1,26 @@
+/* ## WordPress
+--------------------------------------------- */
+
+.aligncenter,
+.alignleft,
+.alignright {
+	display: block;
+	float: none;
+	margin: 0 auto $spacer--m;
+}
+
+.alignleft {
+	@include grid-media($screen--s) {
+		display: block;
+		float: left;
+		margin: 0 $spacer--m $spacer--m 0;
+	}
+}
+
+.alignright {
+	@include grid-media($screen--s) {
+		display: block;
+		float: right;
+		margin: 0 0 $spacer--m $spacer--m;
+	}
+}

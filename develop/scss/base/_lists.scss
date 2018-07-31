@@ -1,0 +1,18 @@
+/* ## Lists
+--------------------------------------------- */
+
+ul,
+ol {
+	margin: 0 0 $spacer--m;
+	padding: 0 0 0 $spacer--m;
+}
+
+dl,
+dd,
+dt {
+	margin: 0;
+}
+
+dt {
+	font-weight: 600;
+}

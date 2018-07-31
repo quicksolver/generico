@@ -1,0 +1,74 @@
+/* ## Forms
+--------------------------------------------- */
+
+#{$all-text-inputs},
+select {
+	appearance: none;
+	background-color: $color-default-white;
+	border: $color-default-black 1px solid;
+	border-radius: $base-border-radius;
+	box-shadow: inset 0 1px 3px rgba($color-default-black, 0.05);
+	box-sizing: border-box;
+	display: block;
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	margin-bottom: $spacer--s;
+	padding: $spacer--s;
+	width: 100%;
+
+	&:hover {
+		border-color: $color-default-black;
+	}
+
+	&:focus {
+		border-color: $color-default-black;
+		box-shadow: inset 0 0 5px adjust-color($color-default-black, $lightness: -5%, $alpha: -0.3);
+		outline: none;
+	}
+
+	&:disabled {
+		background-color: shade($color-default-white, 5%);
+		cursor: not-allowed;
+
+		&:hover {
+			border: $color-default-black 1px solid;
+		}
+	}
+
+	&::placeholder {
+		color: $color-default-black;
+	}
+}
+
+[type="checkbox"],
+[type="radio"] {
+	display: inline;
+	margin-right: $spacer--xs;
+}
+
+[type="file"] {
+	margin-bottom: $spacer--s;
+	width: 100%;
+}
+
+fieldset {
+	background-color: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+label,
+legend {
+	display: block;
+	font-weight: 700;
+	margin-bottom: $spacer--xs;
+}
+
+select {
+	appearance: menulist;
+}
+
+textarea {
+	resize: vertical;
+}

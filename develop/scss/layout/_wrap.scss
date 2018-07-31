@@ -1,0 +1,13 @@
+/* ## Wrap
+--------------------------------------------- */
+
+.wrap {
+	max-width: $base-container-width;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 5%;
+
+	@include grid-media($screen--xl) {
+		padding: 0;
+	}
+}
