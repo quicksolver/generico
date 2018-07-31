@@ -10,6 +10,7 @@
 
 namespace Generico\Theme;
 
+use D2\Core\AssetLoader;
 use D2\Core\GenesisCustomizer;
 use D2\Core\GenesisLayout;
 use D2\Core\GenesisMetaBox;
@@ -17,6 +18,40 @@ use D2\Core\PageTemplate;
 use D2\Core\TextDomain;
 use D2\Core\ThemeSupport;
 use D2\Core\WidgetArea;
+
+$generico_assets = [
+	AssetLoader::SCRIPTS => [
+		[
+			AssetLoader::HANDLE   => 'generico',
+			AssetLoader::URL      => AssetLoader::path( 'assets/js/generico.js' ),
+			AssetLoader::DEPS     => [ 'jquery' ],
+			AssetLoader::VERSION  => CHILD_THEME_VERSION,
+			AssetLoader::FOOTER   => true,
+			AssetLoader::ENQUEUE  => true,
+			AssetLoader::LOCALIZE => [
+				AssetLoader::LOCALIZEVAR  => 'generico_menu_params',
+				AssetLoader::LOCALIZEDATA => [
+					'mainMenu'    => sprintf(
+						'%s <span class="screen-reader-text">%s</span>',
+						file_get_contents( get_stylesheet_directory() . '/assets/images/icon-menu.svg' ),
+						__( 'Toggle Menu', 'generico' )
+					),
+					'subMenu'     => sprintf(
+						'%s <span class="screen-reader-text">%s</span>',
+						file_get_contents( get_stylesheet_directory() . '/assets/images/icon-submenu.svg' ),
+						__( 'Toggle Submenu', 'generico' )
+					),
+					'menuClasses' => [
+						'combine' => [
+							'.nav-primary',
+						],
+						'others'  => [],
+					],
+				]
+			],
+		],
+	],
+];
 
 $generico_customizer_panels = [
 	GenesisCustomizer::REMOVE => [
@@ -108,6 +143,7 @@ $generico_widget_areas = [
 ];
 
 return [
+	AssetLoader::class       => $generico_assets,
 	GenesisCustomizer::class => $generico_customizer_panels,
 	GenesisLayout::class     => $generico_layouts,
 	GenesisMetaBox::class    => $generico_meta_boxes,
