@@ -2,13 +2,13 @@
 /**
  * Theme functions file.
  *
- * @package   Generico\Theme
+ * @package   D2\Generico
  * @author    Craig Simpson <craig@craigsimpson.scot>
  * @copyright Copyright (c) 2018, Craig Simpson
  * @license   MIT
  */
 
-namespace Generico\Theme;
+namespace D2\Generico;
 
 define( 'CHILD_THEME_NAME', 'Generico' );
 define( 'CHILD_THEME_URL', 'https://github.com/d2themes/generico' );
