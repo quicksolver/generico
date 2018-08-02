@@ -27,7 +27,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Generico\\Theme\\": "src/"
+      "D2\\Generico\\": "src/"
     }
   }
 }

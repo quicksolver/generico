@@ -2,13 +2,13 @@
 /**
  * Theme config file.
  *
- * @package   Generico\Theme
+ * @package   D2\Generico
  * @author    Craig Simpson <craig@craigsimpson.scot>
  * @copyright Copyright (c) 2018, Craig Simpson
  * @license   MIT
  */
 
-namespace Generico\Theme;
+namespace D2\Generico;
 
 use D2\Core\AssetLoader;
 use D2\Core\GenesisCustomizer;
