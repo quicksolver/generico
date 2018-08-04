@@ -19,7 +19,9 @@ define( 'CHILD_THEME_VERSION', '0.1.0' );
  *
  * @since 0.1.0
  */
-if ( file_exists( $composer = __DIR__ . '/vendor/autoload.php' ) ) include_once $composer;
+if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
+	include_once __DIR__ . '/vendor/autoload.php';
+}
 
 add_action( 'genesis_setup', __NAMESPACE__ . '\\child_theme_setup', 15 );
 /**
